@@ -26,6 +26,19 @@ body {
     justify-content: space-between;
 }
 
+.sidebar-logo {
+    background-color:rgba(0, 0, 0, 0.5);
+    margin-top: 30%;
+    height: 150px;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+
+}
+
 .sidebar-caption {
     margin-bottom: 1.2em;
     color: white;
@@ -37,4 +50,80 @@ body {
 
 .form-area {
     flex:1;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    background-color: lightgray;
 }
+
+header {
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+header h1,
+header p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 0 150px 0 30px;
+}
+
+form {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.user-info {
+    background-color: white;
+    padding: 0 0 20px 30px;
+    display: flex;
+    flex-direction: column;
+    appearance: none;
+    border: none;
+}
+
+.user-info legend {
+    padding-top: 38px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 60px 20px 0;
+}
+
+.submit-controls {
+    padding: 0 30px;
+    appearance: none;
+    border: none;
+    padding-top: 1.5em;
+}
+
+.submit-controls button {
+    padding: 0.8em 2.8em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 7px;
+    border:none;
+    background-color: #596D48;
+    color: white;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
