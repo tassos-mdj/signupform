@@ -6,6 +6,13 @@
     -moz-box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./fonts/norse-bold-webfont.woff2)
+            format(woff2);
+    
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -30,13 +37,24 @@ body {
     background-color:rgba(0, 0, 0, 0.5);
     margin-top: 30%;
     height: 150px;
+    line-height: 150px;
     font-size: 60px;
     font-weight: 900;
     color: white;
     padding: 30px 0;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
 
+.sidebar-logo span {
+    font-family: "Norse Bold" , sans-serif;
+}
+
+.sidebar-logo img {
+    height: 100%;
 }
 
 .sidebar-caption {
@@ -123,7 +141,21 @@ form {
 }
 
 input {
+    
     border: 1px solid #E5E7EB;
     border-radius: 3px;
 }
 
+input:focus,
+input:active {
+    outline: none;
+    border: 1px solid blue;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:empty {
+    border: 1px solid #E5E7EB;
+}
