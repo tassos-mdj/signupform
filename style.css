@@ -60,6 +60,7 @@ body {
 .sidebar-caption {
     margin-bottom: 1.2em;
     color: white;
+    font-size: 0.8em;
 }
 
 .sidebar-caption a {
@@ -70,12 +71,11 @@ body {
     flex:1;
     display: flex;
     flex-flow: column nowrap;
-    
-    background-color: lightgray;
+    background-color: #f6f6f7;
 }
 
 header {
-    height: 28vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -87,7 +87,8 @@ header p {
     font-size: 18px;
     font-weight: 600;
     margin-top: 20px;
-    padding: 0 150px 0 30px;
+    padding: 0 10vw 0 30px;
+    max-width: 800px;
 }
 
 form {
@@ -102,17 +103,19 @@ form {
     flex-direction: column;
     appearance: none;
     border: none;
+    box-shadow: 0 3px 4px #888888;
 }
 
 .user-info legend {
-    padding-top: 38px;
-    font-size: 16px;
+    padding-top: 4em;
+    font-size: 1.8em;
     font-weight: 600;
 }
 
 .form-row {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    
 
 }
 
@@ -127,12 +130,13 @@ form {
     appearance: none;
     border: none;
     padding-top: 1.5em;
+    
 }
 
 .submit-controls button {
-    padding: 0.8em 2.8em;
-    margin-bottom: 1em;
-    font-size: 1.2em;
+    padding: 1em 3em;
+    margin: 1.5em 0;
+    font-size: 1.5em;
     font-weight: bold;
     border-radius: 7px;
     border:none;
@@ -144,6 +148,8 @@ input {
     
     border: 1px solid #E5E7EB;
     border-radius: 3px;
+    height: 2em;
+    width: 18em;
 }
 
 input:focus,
@@ -158,4 +164,15 @@ input:invalid {
 
 input:empty {
     border: 1px solid #E5E7EB;
+}
+
+.login-prompt {
+    font-size: 1.3em;
+    
+}
+
+.login-prompt a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 900;
 }
