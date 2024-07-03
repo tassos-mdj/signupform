@@ -17,7 +17,7 @@
     <div class="form-area">
         <header>
             <h1>This is the Micro Dj course.</h1>
-            <p>Welcome to our service, Here we can help you achieve your goals and everything you ever wanted through our curicullum.</p>
+            <p>Welcome to our service! Here we can help you achieve your goals and everything you ever wanted through our curicullum.</p>
         </header>
         <form action="" method="get">
             <fieldset class="user-info">
@@ -36,7 +36,7 @@
                     <div class="form-field">
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email"  />
-                        <span></span>
+                        <span class="em-error" aria-live="polite"></span>
                     </div>
                     <div class="form-field">
                         <label for="phone">PHONE NUMBER</label>
@@ -47,10 +47,12 @@
                     <div class="form-field">
                         <label for="pwd">PASSWORD</label>
                         <input type="password" name="pwd" id="pwd" minlength="8" >
+                        <span class="pass-error" aria-live="polite"></span>
                     </div>
                     <div class="form-field">
                         <label for="pwd-confirm">CONFIRM PASSWORD</label>
                         <input type="password" name="pwd-confirm" id="pwd-confirm" minlength="8" >
+                        <span class="pass-error" aria-live="polite"></span>
                     </div>
                 </div>
             </fieldset>

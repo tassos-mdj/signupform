@@ -26,7 +26,6 @@ body {
     background-image: url(./background.jpg);
     background-size: cover;
     width: 38vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,11 +125,10 @@ form {
 }
 
 .submit-controls {
-    padding: 0 30px;
+    padding: 1.5em 30px calc(100vh - 462px - 20vh) 30px;
     appearance: none;
     border: none;
-    padding-top: 1.5em;
-    
+        
 }
 
 .submit-controls button {
@@ -174,4 +172,14 @@ input:focus {
     text-decoration: none;
     color: #596D48;
     font-weight: 900;
+}
+
+input[type="email"]:invalid + .em-error::after {
+    content: "Please provide email in the correct formating";
+    color: gray;
+}
+
+input[type="password"]:invalid + .pass-error::after {
+    content: "Password must be 8 characters or more";
+    color: gray;
 }
