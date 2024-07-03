@@ -152,18 +152,17 @@ input {
     width: 18em;
 }
 
-input:focus,
-input:active {
-    outline: none;
-    border: 1px solid blue;
-}
-
 input:invalid {
     border-color: red;
 }
 
-input:empty {
+input:valid {
     border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
 }
 
 .login-prompt {
